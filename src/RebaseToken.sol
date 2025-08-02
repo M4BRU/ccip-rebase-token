@@ -128,6 +128,14 @@ contract RebaseToken is ERC20 {
     }
 
     /**
+     * @notice get the current interest rate set on the contract
+     * @return the interest rate of the contract
+     */
+    function getInterestRate() external view returns (uint256) {
+        return s_interestRate;
+    }
+
+    /**
      * 
      * @param _user the user to get interest rate for
      */
